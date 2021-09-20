@@ -1,0 +1,11 @@
+## R Validation
+
+rm(list = ls())
+
+library(tidyverse)
+library(cleaninginspectoR)
+library(openxlsx)
+
+df <- read.xlsx("./data/december_2020.xlsx")
+
+issues <- inspect_all(df)
